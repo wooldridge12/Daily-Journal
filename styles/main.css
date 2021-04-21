@@ -1,0 +1,23 @@
+.dailyJournalHeader {
+    text-align: center;
+}
+.myName {
+    text-align: center;
+}
+fieldset {
+    width: 50%;
+}
+.boxes {
+    margin-left: 32%;
+}
+.textDiv {
+    flex: 0 0 80%;
+}
+.flexbox {
+    display:flex;
+    flex-direction: column;
+}
+.recordItems {
+    margin-left: 45%;
+    margin-top: 1%;
+}

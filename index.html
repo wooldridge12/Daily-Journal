@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="./scripts/main.js"></script>
+    <title>Daily Journal</title>
+</head>
+
+<body>
+    <h1 class="dailyJournalHeader">DAILY JOURNAL</h1>
+    <h2 class="myName">Michael Wooldridge</h2>
+    <section class="boxes">
+        <form action="">
+            <fieldset class="flexbox">
+                <label for="journalDate">Date of entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset class="flexbox">
+                <label for="conceptsCovered">Concepts Covered</label>
+                <input type="text" name="conceptsCovered">
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset class="flexbox">
+                <label for="journalEntry">Journal Entry</label>
+                <div class="textDiv">
+                    <textarea class="makeBigBox"></textarea>
+                </div>
+            </fieldset>
+        </form>
+        <!-- Make mood box cycle through moods (happy, okay,sad) -->
+        <form action="">
+            <fieldset class="flexbox">
+                <label for="mood">Mood</label>
+                <input type="button" name="mood">
+            </fieldset>
+        </form>
+        <article id="entries"></article>
+    </section>
+    <!-- button doesnt go anywhere, fix it -->
+    <button class="recordItems">Record Journal Entry</button>
+
+</body>
+
+</html>
