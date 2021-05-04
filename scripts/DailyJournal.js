@@ -2,13 +2,6 @@
 //  check import, it may be wrong
 import { Entries } from "./Entries.js"
 
-export const DailyJournal = () => {
-    return `
-    <div class="entryList">
-        ${ Entries() }
-        </div>
-        `
-}
 
 export const DailyJournal = () => {
     return `
