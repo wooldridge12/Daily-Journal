@@ -1,9 +1,8 @@
- 
-//  check import, it may be wrong
- import { database } from "./database.js"
+ //  check import, it may be wrong
+ import { getEntries } from "./database.js"
 
 export const Entries = () => {
-    const entries = database
+    const entries = getEntries()
     const allEntriesAsHTML = ""
 
     for (const entry of entries) {
