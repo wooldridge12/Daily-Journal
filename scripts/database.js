@@ -28,13 +28,18 @@ const database = {
             entry:"This is alot of steps happening at once. I still have to look over past code to remember it. This has been the most difficult thing so far. I feel I spent so much time on this I fell behind most of my peers.",
             mood:"sad"
         }
-    ]
+    ],
+    orderBuilder: {},
 }
 // export= pulling out data, const = varibal, getJournalEntries= function
-export const getJournalEntries = () => {
+// export const getJournalEntries = () => {
     // copying data put into my boxes
-    const copyOfData = [...database.entries]
+    // const copyOfData = [...database.entries]
     // returning data to me from my boxes
+//     return copyOfData
+// }
+export const getJournalEntries = () => {
+    const copyOfData = database.entries.map(entry => ({...entry}))
     return copyOfData
 }
 export const getEntries = () => {
@@ -44,4 +49,21 @@ export const getEntries = () => {
 
 
     })
+}
+export const setEntry = (id) => {
+    database.orderBuilder.entryId = id
+}
+
+export const addCustomOrder = () => {
+    const newOrder = {...database.orderBuilder}
+
+    newOrder.id = [...database.customOrders].pop().id + 1
+    
+    newOrder.timestamp = Date.now()
+    
+    database.customOrders.push(newOrder)
+    
+    database.orderBuilder = {}
+    
+    document.dispatchEvent(new CustomEvent("stateChanged"))
 }
