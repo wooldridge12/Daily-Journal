@@ -1,13 +1,11 @@
+import { getJournalEntries, setEntry } from "./database.js"
  
 //  check import, it may be wrong
- import { getJournalEntries, setEntry } from "./database.js"
 
 
 // const entries = getJournalEntries()
 
-    //HELP PLEASE
-
-
+ //HELP PLEASE
 export const Entries = () => {
     const entries = getJournalEntries()
     const allEntriesAsHTML = ""
