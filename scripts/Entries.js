@@ -1,6 +1,6 @@
+import { getJournalEntries, setEntry } from "./database.js"
  
 //  check import, it may be wrong
- import { getJournalEntries, setEntry } from "./database.js"
 
 
 // const entries = getJournalEntries()
