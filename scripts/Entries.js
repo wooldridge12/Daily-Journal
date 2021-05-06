@@ -1,15 +1,23 @@
  
 //  check import, it may be wrong
- import { database } from "./database.js"
+ import { getJournalEntries, setEntry } from "./database.js"
+
+
+// const entries = getJournalEntries()
+
+    //HELP PLEASE
+
 
 export const Entries = () => {
-    const entries = database
+    const entries = getJournalEntries()
     const allEntriesAsHTML = ""
 
     for (const entry of entries) {
         allEntriesAsHTML += `
-        Replace this with your HTML representation of a journal entry.
+        Hello
         `
     }
     return allEntriesAsHTML
 }
+
+

@@ -1,16 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+import {} from "./DailyJournal.js"
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <script type="module" src="./scripts/main.js"></script>
-    <title>Daily Journal</title>
-</head>
 
-<body>
+
+export const JournalForm = () => {
+    return `
     <h1 class="dailyJournalHeader">DAILY JOURNAL</h1>
     <h2 class="myName">Michael Wooldridge</h2>
     <section class="boxes">
@@ -34,7 +27,6 @@
                 </div>
             </fieldset>
         </form>
-        <!-- Make mood box cycle through moods (happy, okay,sad) -->
         <form action="">
             <fieldset class="flexbox">
                 <label for="mood">Mood</label>
@@ -45,7 +37,5 @@
     </section>
     <!-- button doesnt go anywhere, fix it -->
     <button class="recordItems">Record Journal Entry</button>
-
-</body>
-
-</html>
+    `
+}
