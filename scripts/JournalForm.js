@@ -36,6 +36,6 @@ export const JournalForm = () => {
         <article id="entries"></article>
     </section>
     <!-- button doesnt go anywhere, fix it -->
-    <button class="recordItems">Record Journal Entry</button>
+    <button id="recordItems">Record Journal Entry</button>
     `
 }

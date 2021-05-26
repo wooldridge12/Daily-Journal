@@ -1,5 +1,5 @@
 const database = {
-    "entries": [
+    entries: [
         {
             id: 1,
             date: "April, 16, 2021",
@@ -50,20 +50,9 @@ export const getEntries = () => {
 
     })
 }
+//make post request, will look just like above function.
+
+
 export const setEntry = (id) => {
     database.orderBuilder.entryId = id
-}
-
-export const addCustomOrder = () => {
-    const newOrder = {...database.orderBuilder}
-
-    newOrder.id = [...database.customOrders].pop().id + 1
-    
-    newOrder.timestamp = Date.now()
-    
-    database.customOrders.push(newOrder)
-    
-    database.orderBuilder = {}
-    
-    document.dispatchEvent(new CustomEvent("stateChanged"))
 }
