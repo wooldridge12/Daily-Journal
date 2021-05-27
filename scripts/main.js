@@ -1,3 +1,5 @@
+//Need to work on mood sections
+
 import { fetchEntries } from "./database.js"
 
 import { DailyJournal } from "./DailyJournal.js"

@@ -27,11 +27,19 @@ export const JournalForm = () => {
         <form action="">
             <fieldset class="flexbox">
                 <label for="mood">Mood</label>
-                <input type="button" name="mood">
+                <select class="dropdown">
+                    <div id="moodDropDown" class="dropDownContent">
+                    <option value="happy">Happy</option>
+                    <option value="ok">Ok</option>
+                    <option value="confused">Confused</option>
+                    <option value="mad">Mad</option>
+                    <option value=sad>Sad</option>
+                    </div>
+                    </select>
             </fieldset>
         </form>
         <article id="entries"></article>
     </section>
-    <button id="submitNotes">Record Journal Entry</button>
+    <button id="submitNotes" class="recordButton">Record Journal Entry</button>
     `
 }

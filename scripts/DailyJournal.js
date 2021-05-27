@@ -15,13 +15,11 @@ mainContainer.addEventListener(
             const journalDate = document.querySelector("input[type='date']").value
             const journalConcept = document.querySelector("input[name='conceptsCovered']").value
             const journalEntry = document.querySelector("textarea[class='makeBigBox']").value
-            const journalMood = document.querySelector("input[name='mood']").value
 
             const dataToAPI = {
                 date: journalDate,
                 concept: journalConcept,
                 entry: journalEntry,
-                mood: journalMood
             }
             sendEntry(dataToAPI)
         }
@@ -31,8 +29,6 @@ mainContainer.addEventListener(
 
 export const DailyJournal = () => {
     return `
-        <h1>Daily Journal</h1>
-
         <article class="entryForm">
         ${ JournalForm() }
         </article>
