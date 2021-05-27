@@ -1,0 +1,27 @@
+.recordButton {
+    margin-left: 43%;
+    margin-top: 2rem;
+    height: 5rem;
+    font-size: large;
+}
+
+.notebookHTwo {
+    margin-left: 25%;
+}
+
+.noteBook {
+    margin-left: 25%;
+    width: 400px;
+}
+
+.wholeBox {
+    width: 75%;
+    margin-left: 14%;
+    margin-top: 4rem;
+}
+
+.noteConcepts {
+    font-size: large;
+    font-weight: bolder;
+    margin-left: 25%;
+}
