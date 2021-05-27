@@ -1,16 +1,22 @@
+import { fetchEntries } from "./database.js"
 
-//  check import, it may be wrong
-import { JournalForm } from "./JournalForm.js"
+import { DailyJournal } from "./DailyJournal.js"
 
 const container = document.querySelector("#entries")
 
 const render = () => {
-    container.innerHTML = JournalForm()
-}
+    fetchEntries().then(
+        () => {
+    container.innerHTML = DailyJournal()
+
+         } ) }
+
 
 render()
 
-document.addEventListener("stateChanged",event => {
+container.addEventListener(
+    "stateChanged",
+    event => {
     console.log("State of data has changed. Regenerating HTML...")
     render()
 })

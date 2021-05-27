@@ -1,6 +1,3 @@
-import {} from "./DailyJournal.js"
-
-
 
 export const JournalForm = () => {
     return `
@@ -35,7 +32,6 @@ export const JournalForm = () => {
         </form>
         <article id="entries"></article>
     </section>
-    <!-- button doesnt go anywhere, fix it -->
-    <button id="recordItems">Record Journal Entry</button>
+    <button id="submitNotes">Record Journal Entry</button>
     `
 }
